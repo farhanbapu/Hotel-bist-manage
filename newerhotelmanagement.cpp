@@ -446,7 +446,11 @@ if(!f1)
 
 }
 
-int foodmanager()
+class restro {
+                public:
+                int foodmanager();
+             };
+int restro::foodmanager()
     {
         string menu[500]={"Continental/ Fast Food","Gujarati","South Indian","Chinese","Punjabi","Deserts","Soup","Beverages","Appetizers","Diet Options","Classic cheese Pizza","Marghertia","7 Spice Pizza","Custom Pizza","Spicy Pasta","Cheese Pasta","Custom Pasta","Grilled Sandwich","Cheese Sandwich","Vegetable Sandwich","Paav Bhaji","Cheese Macroni","Regular Macroni","Custom Macroni","Classic Thali","Dhoklas","Methi Theplas","Daal Dhokli","Kadhi","Khandvi","Shaak Bhaaji","Daabeli","Simple Dosa","Cheese Dosa","Custom Dosa","Meduvadaa","Cheese Meguvadaa","Custom Meduvadaa","Idli","Utappam","Vadaa Sambhar","Sambhar","Fried Rice","Manchurian","Simple Noodles","hakka Noodles","Schezwan Noodles","ChauMin","Tofu","Spring roll","Sarso Ka saag","Makke Di Roti","Chole Bhature","Chanaa Masaala","Dhaba daal","Daal Makhni","Amristsari Kulcha","Kulcha","Paneer Tikka","Choco lava cake","Rasgulla","Gulab Jamoon","Custard","Kheer","Shri Khand","Mancahu soup","Tomato soup","Minestrone Soup","Noodle Soup","French Onion Soup","Creame Soup","Totellini Soup","Bread Soup","Sweet Corn Plain Soup","Manchurian Soup","Sweet Corn Soup","Simple Tea","Elachi Tea","Masala Tea","Cold Drink","Cappuccino","Mocha","Mocha","Black Coffee","Espresso","French fries","French fries with gravy","Sweet Potato","Onion Rings","Pub Chips","Garlic Bread","Fruit","Whole Grains","Nuts","Apple Cider Vinegar","Avocados","Cottage Cheese","Beans and Legumes","Tuna","Boiled Potatoes","Lean Beef and Chicken","Cruciferous Vegetables","Salmon","Leafy Greens","Whole Eggs"};
         int signalchoice[500]; //This variable will store what was ordered
@@ -885,7 +889,8 @@ int main()
         {   if(alpha==2)
         {
                 //FOOD MANAGEMENT STARTS FROM HERE
-                foodmanager();
+                restro f;
+                f.foodmanager();
                 system("cls");
                 goto startagain;
                 //FOOD MANAGEMENT ENDS HERE
